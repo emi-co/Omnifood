@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* fonts  ////////////////////////////////////////////*/
+
+.lato-thin {
+  font-family: "Lato", system-ui;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.lato-light {
+  font-family: "Lato", system-ui;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-thin-italic {
+  font-family: "Lato", system-ui;
+  font-weight: 100;
+  font-style: italic;
+}
+
+/* page ////////////////////////////////////////////////// */
+html,
+body {
+  color: #555;
+  font-family: "Lato", "sans-serif";
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+}
+
+/* head ////////////////////////////////////////////////// */
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("img/hero.jpg");
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+.row {
+  max-width: 1140;
+  margin: 0 auto;
+}
+
+.row:before {
+  content: "";
+  display: table;
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+  float: left;
+  margin-top: 20px;
+}
+
+/* navigation  ////////////////////////////////////////////*/
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 55px;
+  padding-right: 55px;
+  list-style: none;
+}
+
+/* links ////////////////////////////////////////////////// */
+
+a {
+  border-bottom-color: transparent;
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  padding: 8px 0;
+  border-bottom: 2px solid #e67e27;
+  transition: border-bottom 0.2s;
+}
+
+a {
+  background-color: transparent;
+}
+
+/* hero ////////////////////////////////////////////*/
+
+.hero-text-box {
+  width: 1140px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-text-box h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 240%;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+/* buttons////////////////////////////////////////////////// */
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+  color: #fff;
+}
+
+.btn .btn:hover,
+.btn:active {
+  background-color: #cf6d17;
+}
+
+.btn-full {
+  background-color: #e67e27;
+  border: 1px solid #e67e27;
+  color: #fff;
+}
+
+.btn-full:hover,
+.btn-full:active {
+}
+
+/* .btn-full:visited; */
+
+.btn-ghost {
+  border: 1px solid;
+  color: #e67e22;
+  transition: color 0.2s;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+  border: 1px solid #e67e27;
+  color: #fff;
+}
+
+.btn:link {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+  transition: background-color, 0.2s, color 0.2s;
+}
+/* border: 1px solid #e67e22;
+color: #e67e27; */
