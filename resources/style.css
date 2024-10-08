@@ -31,6 +31,9 @@
 }
 
 /* page ////////////////////////////////////////////////// */
+html {
+  line-height: 1.5;
+}
 html,
 body {
   color: #555;
@@ -38,6 +41,7 @@ body {
   font-weight: 300;
   font-size: 20px;
   text-rendering: optimizeLegibility;
+  overflow-x: hidden;
 }
 
 /* head ////////////////////////////////////////////////// */
@@ -48,11 +52,13 @@ body {
   background-position: center;
   height: 100vh;
   background-attachment: fixed;
+  /* zoom: 1; */
 }
 
 .row {
   max-width: 1140;
   margin: 0 auto;
+  zoom: 1;
 }
 
 .row:before,
@@ -183,4 +189,69 @@ a {
   text-decoration: none;
   border-radius: 200px;
   transition: background-color, 0.2s, color 0.2s;
+}
+
+/* character display// */
+h2:after {
+  display: block;
+  height: 2px;
+  width: 100px;
+  background-color: #e67e22;
+  content: "";
+  margin: auto;
+  margin-top: 30px;
+}
+#features {
+  padding: 80px 0;
+}
+
+.row {
+  zoom: 1;
+}
+.row-1 h2 {
+  text-transform: uppercase;
+  word-spacing: 2px;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  font-size: 180%;
+  font-weight: 300;
+}
+
+.copy {
+  margin-bottom: 30px;
+  line-height: 145%;
+  width: 70%;
+  margin-left: 15%;
+
+  text-align: left;
+}
+
+.row-2 {
+  display: flex;
+  justify-content: center;
+}
+
+.block-1 {
+}
+
+.block h3 {
+  font-size: 110%;
+  margin-bottom: 15px;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.block p {
+  font-size: 90%;
+  line-height: 145%;
+}
+
+.block {
+  flex-shrink: 1;
 }
