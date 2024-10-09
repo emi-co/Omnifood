@@ -48,6 +48,19 @@ section {
   padding: 80px 0;
 }
 
+h2 {
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-size: 110%;
+  margin-bottom: 15px;
+}
+
 /* head ////////////////////////////////////////////////// */
 .header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
@@ -121,6 +134,13 @@ a:hover {
 
 a {
   background-color: transparent;
+}
+
+.city-row a:visited {
+  color: #e67e22;
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #e67e22;
 }
 
 /* hero ////////////////////////////////////////////*/
@@ -232,9 +252,11 @@ h2:after {
   text-align: left;
 }
 
-.row-2 {
+.blocks {
   display: flex;
   justify-content: center;
+  align-items: center;
+  justify-content: space-between;
   margin: 1% 0 1% 1.6%;
 }
 
@@ -258,6 +280,7 @@ h3 {
 .block {
   padding: 1%;
   width: 23.8%;
+  flex-wrap: wrap;
 }
 
 .icon-big {
@@ -348,7 +371,7 @@ h3 {
 .col-1 {
   width: 49.2%;
   float: left;
-  margin: 1% 0 1% 1.6%;
+  /* margin: 1% 0 1% 1.6%; */
 }
 
 /* .col-2 {
@@ -382,4 +405,159 @@ h3 {
   height: 50px;
   width: auto;
   margin-right: 10px;
+}
+
+/* Cities //////////////////////////////////////// */
+.icon-small {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  color: #e67e22;
+  font-size: 120%;
+  margin-right: 10px;
+  line-height: 120%;
+  vertical-align: middle;
+  margin-top: -4px;
+}
+
+.city-row {
+  display: flex;
+}
+
+.city {
+  padding: 1%;
+  width: 23.8%;
+  display: block;
+  margin: 1% 0 1% 1.6%;
+}
+
+.city img {
+  height: auto;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+  max-width: 100%;
+  flex: 1 1 auto;
+}
+
+.city-1 {
+  margin-left: 0;
+}
+
+/* Testimonials /////////////////////////////////////
+ */
+
+.section-testimonials {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("img/back-customers.jpg");
+  background-size: cover;
+  color: #fff;
+  background-attachment: fixed;
+}
+
+blockquote {
+  padding: 2%;
+  line-height: 145%;
+  position: relative;
+  margin-top: 40px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+blockquote:before {
+  content: "\201C";
+  font-size: 500%;
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+}
+
+cite {
+  font-size: 90%;
+  margin-top: 25px;
+  display: block;
+  margin-top: 40px;
+  font-weight: bold;
+}
+
+cite img {
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.testimonials {
+  display: flex;
+}
+
+.p-boxes {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.plan-box {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 90%;
+  margin-left: 5%;
+  box-shadow: 0 2px 2px #efefef;
+}
+.plan-box {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 90%;
+  margin-left: 5%;
+  box-shadow: 0 2px 2px #efefef;
+}
+
+.plan-price span {
+  font-size: 30%;
+  font-weight: 300;
+}
+
+.plan-price {
+  font-size: 300%;
+  font-weight: 100;
+  color: #e67e22;
+}
+
+.plan-box div {
+  padding: 15px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.plan-box ul li {
+  padding: 5px 0;
+}
+
+.plan-box ul {
+  list-style: none;
+}
+
+.section-plans {
+  background-color: #f4f4f4;
+}
+
+/* form ////////////////////////////////////////// */
+
+input [type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  height: 100px;
+}
+
+input [type="checkbox"] {
+  margin: 10px 5px 10px 0;
 }
