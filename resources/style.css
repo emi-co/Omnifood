@@ -567,11 +567,6 @@ cite img {
   padding-bottom: 50px;
 }
 
-/* form ////////////////////////////////////////// */
-/* .form-box {
-  background-color: #fff;
-} */
-
 input [type="text"],
 input[type="email"],
 select,
@@ -606,10 +601,6 @@ input {
 .contact-form {
   width: 60%;
   margin: 0 auto;
-}
-
-.question {
-  float: left;
 }
 
 footer {
@@ -680,4 +671,47 @@ footer p {
   color: #888;
   text-align: center;
   margin-top: 20px;
+}
+
+label {
+  width: 150px;
+}
+
+.form {
+  display: flex;
+}
+
+input,
+select textarea {
+  flex: 1;
+}
+
+.sbmt {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+  color: #fff;
+  background-color: #e67e27;
+  border: 1px solid #e67e27;
+  color: #fff;
+}
+
+.sbmt:hover {
+  background-color: #cf6d17;
+  border: 1px solid #e67e22;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
 }
