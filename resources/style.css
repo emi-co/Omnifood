@@ -570,11 +570,13 @@ cite img {
 input [type="text"],
 input[type="email"],
 select,
+input#name,
 textarea {
   width: 100%;
   padding: 7px;
   border-radius: 3px;
   border: 1px solid #ccc;
+  margin-bottom: 20px;
 }
 
 textarea {
@@ -583,11 +585,6 @@ textarea {
 
 input [type="checkbox"] {
   margin: 10px 5px 10px 0;
-}
-
-button,
-input {
-  overflow: visible;
 }
 
 *:focus {
@@ -607,6 +604,7 @@ footer {
   background-color: #333;
   padding: 50px;
   font-size: 80%;
+  clear: both;
 }
 
 .footer-nav {
@@ -675,14 +673,10 @@ footer p {
 
 label {
   width: 150px;
+  margin-bottom: 20px;
 }
 
-.form {
-  display: flex;
-}
-
-input,
-select textarea {
+#name {
   flex: 1;
 }
 
@@ -704,14 +698,63 @@ select textarea {
   cursor: pointer;
 }
 
+.left {
+  display: block;
+  width: auto;
+  margin: 1% 0 1% 1.6%;
+  width: 100%;
+}
+
+.right {
+  width: auto;
+  display: block;
+  /* float: left; */
+  margin: 1% 0 1% 1.6%;
+  width: 100%;
+}
+
+input {
+  overflow: visible;
+}
+
+select {
+  text-transform: none;
+}
+
 .container {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
 }
-.form-group {
+
+.right {
+  flex-grow: 1;
+  margin: 5px 0;
+}
+
+.container div {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
+  flex-direction: row;
+  /* justify-content: space-around; */
+  margin: 0 10px;
+}
+
+.left {
+  align-items: flex-end;
+  margin: 5px 0;
+}
+
+textarea {
+  /* width: 300px; */
+  margin-top: 20px;
+}
+
+.c-t {
+  transform: translateY(-80px);
+}
+
+select {
+  height: 40px;
+}
+
+.submit-btn {
+  transform: translate(50%, -80%);
 }
