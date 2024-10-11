@@ -674,6 +674,7 @@ footer p {
 label {
   width: 150px;
   margin-bottom: 20px;
+  text-wrap: wrap;
 }
 
 #name {
@@ -703,6 +704,8 @@ label {
   width: auto;
   margin: 1% 0 1% 1.6%;
   width: 100%;
+  flex: 1;
+  flex-wrap: wrap;
 }
 
 .right {
